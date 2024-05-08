@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh; /*vh = visual height*/
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+        }
+        .cabeçalho{
+            background-color: royalblue;
+            min-height: 80px;
+        }
+
+        .corpo{
+            flex-grow: 1;
+        }
+        .rodape{
+            min-height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabeçalho">Cabeçalho</div>
+    <div class="corpo">Corpo
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cNqFzMlF_S8?si=eKK-RAD8OtvaJHlx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="rodape">Rodape</div>
+    
+</body>
+</html>

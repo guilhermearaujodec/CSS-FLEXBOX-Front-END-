@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    height: 450px;
+    margin: 30px auto;
+    border: 4px solid royalblue;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;            /*Mantém os ítens na mesma linha, diminuindo eles*/
+    /* row - column - row-reverse - column-reverse*/
+    flex-wrap: nowrap;
+    /* nowrap (não quebra as linhas) - wrap (quebra as linhas - wrap reverse (quebra as linhas jogando o resto para cima)*/
+    justify-content: flex-start;
+    /*flex-start (posiciona a direita) - flex-end (posiciona a esquerda - center (centro) - space-between (espaço justificado) - space-around (justifica o espaço e centraliza os contaners) - space evenly (deixa todos os espaços do mesmo tamanho)*/
+    align-items: stretch;
+    /*stretch (ocupa toda a altura) - flex-start - flex-end - center (centraliza a altura) - */
+    align-content: stretch;
+    /* stretch - flex-start - flex-end -center - space-between - space-around - baseline*/
+}
+
+.item1{
+    order: 0;
+    flex-grow: 1; /*Ocupar o espaço que sobrou*/
+    flex-basis: 100px; /*largura base do item*/
+}
+.item2{
+    order: 0;
+    flex-grow: 3; /*Ocupar o espaço que sobrou*/
+    flex-basis: 100px; /*largura base do item*/
+}
+.item3{
+    order: 0;
+    flex-grow: 1; /*Ocupar o espaço que sobrou*/
+    flex-basis: 100px; /*largura base do item*/
+}
+.item4{
+    order: 0;
+    flex-grow: 0; /*Ocupar o espaço que sobrou*/
+    flex-shrink: 0; /*quantificar o encolhimento mediante o tamanho da janela*/
+    flex-basis: 100px; /*largura base do item*/
+    flex: 0 3 100px; /*Coloca todas as propriedades eme uma única linha"*/
+    align-self: self-start;     /*reposiciona a altura de um unico iem*/
+    
+}
+.item5{
+    order: 0;
+    flex-grow: 0; /*Ocupar o espaço que sobrou*/
+    flex-basis: 100px; /*largura base do item*/
+}
+
+.item6{
+    order: 0;
+    flex-grow: 0; /*Ocupar o espaço que sobrou*/
+    flex-basis: 100px; /*largura base do item*/
+}
+
+.container>div{
+    width: 200px;
+    border: 2px solid coral;
+    background-color: lightsalmon;
+    font-size: 1.2em;
+}
+/*.item2{
+    padding-top: 20px;
+
+}
+.item3{
+    padding-bottom: 20px;
+}
